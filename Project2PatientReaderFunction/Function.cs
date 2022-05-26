@@ -121,7 +121,7 @@ public class Function
         }
 
         const string QUEUE_URL = "https://sqs.us-east-1.amazonaws.com/440725847939/Project2DownwardQueue";
-        string downwardMessage = $"{{id:\"{patientData.Id}\"}}";
+        string downwardMessage = $"{{\"id\":\"{patientData.Id}\"}}";
 
         Console.WriteLine($"message: {downwardMessage}");
         
